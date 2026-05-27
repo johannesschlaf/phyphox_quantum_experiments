@@ -4,7 +4,7 @@ Sprache: [English](./README.md) | Deutsch
 In diesem Repository finden sich alle benötigten Dateien für alle fertiggestellten phyphox-gestützten Experimente zur Quantenphysik.
 
 ## Bestimmung des Planck'schen Wirkungsquantums
-In diesem Experiment werden die Schwellenspannungen von LEDs unterschiedlicher Peak-Wellenlängen $\lambda$ bestimmt. Aus diesen wiederum kann die zugehörige Photonenenergie berechnet und über $\frac{c}{\lambda}$ aufgetragen werden. Das Planck'sche Wirkungsquantum wird als Steigung der Ausgleichsgerade durch die aufgetragenen Punkte bestimmt.<br>
+In diesem Experiment werden die Schwellenspannungen von LEDs unterschiedlicher Peak-Wellenlängen $\lambda$ bestimmt. Aus diesen wiederum kann die zugehörige Photonenenergie berechnet und über $\nu=\frac{c}{\lambda}$ aufgetragen werden. Das Planck'sche Wirkungsquantum wird als Steigung der Ausgleichsgerade durch die aufgetragenen Punkte bestimmt.<br>
 Für dieses Experiment muss ein DIY-Aufbau gefertigt werden. Wesentliche Fertigungsschritte sind 3D-Druck von Bauteilen, Durchstecklöten elektronischer Komponenten auf einer Platine sowie das Einschmelzen von Gewindeeinsätzen. 
 Eine detaillierte Bauanleitung sowie eine Anleitung zur Durchführung finden sich im Ordner _Instructions_.
 
