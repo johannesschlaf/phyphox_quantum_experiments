@@ -1,4 +1,6 @@
 # Quantum experiments with phyphox
+Language: **English** | [Deutsch](./README.de.md)
+
 In this repository there are all the files needed for the ready-made phyphox-based quantum experiments.
 **At this moment of time, there are _no_ English instructions available. They will be available in the future.**
 
