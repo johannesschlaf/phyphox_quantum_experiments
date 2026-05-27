@@ -7,5 +7,5 @@ Für dieses Experiment muss ein DIY-Aufbau gefertigt werden. Wesentliche Fertigu
 Eine detaillierte Bauanleitung sowie eine Anleitung zur Durchführung finden sich im Ordner _Instructions_.
 
 ## Analogieexperiment zum BB84-Protokoll
-Das BB84-Protokoll ist ein Verfahren aus der Quantenkryptographie, bei dem Einzelphotonen in bestimmten Polarisationszuständen versendet und auf bestimmte Art und Weise gemessen werden, um gleichzeitig sichere Schlüssel zu generieren und zu senden. Genauere Informationen finden sich in der Handreichung im Ordner _Instructions_. 
+Das BB84-Protokoll ist ein Verfahren aus der Quantenkryptographie, bei dem Einzelphotonen in bestimmten Polarisationszuständen versendet und auf bestimmte Art und Weise gemessen werden, um digitale Schlüssel gleichzeitig zu generieren und sicher zu schicken. Genauere Informationen finden sich in der Handreichung im Ordner _Instructions_. 
 Für das Basisexperiment werden lediglich zwei Smartphones benötigt, für die Simulation eines Abhörversuchs werden drei Smartphones benötigt.   
