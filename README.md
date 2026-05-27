@@ -1,11 +1,11 @@
-# Quantenphysik mit phyphox
-In diesem Repository finden sich alle benötigten Dateien für alle fertiggestellten phyphox-gestützten Experimente zur Quantenphysik.
+# Quantum experiments with phyphox
+In this repository there are all the files needed for the ready-made phyphox-based quantum experiments.
+**At this moment of time, there are _no_ English instructions available. They will be available in the future.**
 
-## Bestimmung des Planck'schen Wirkungsquantums
-In diesem Experiment werden die Schwellenspannungen von LEDs unterschiedlicher Peak-Wellenlängen $\lambda$ bestimmt. Aus diesen wiederum kann die zugehörige Photonenenergie berechnet und über $\frac{c}{\lambda}$ aufgetragen werden. Das Planck'sche Wirkungsquantum wird als Steigung der Ausgleichsgerade durch die aufgetragenen Punkte bestimmt.
-Für dieses Experiment muss ein DIY-Aufbau gefertigt werden. Wesentliche Fertigungsschritte sind 3D-Druck von Bauteilen, Durchstecklöten elektronischer Komponenten auf einer Platine sowie das Einschmelzen von Gewindeeinsätzen. 
-Eine detaillierte Bauanleitung sowie eine Anleitung zur Durchführung finden sich im Ordner _Instructions_.
+## Measuring Planck's constant
+In this experiment, the threshold voltages of LEDs with different peak wavelengths $\lambda$ are measured. From these, the respective photon energy can be calculated and plotted over $\frac{c}{\lambda}$. Planck's constant equals the slope of the line of best fit through these data pairs.
+This experiments needs a DIY setup that needs to be manufactured. Important manufacturing techniques include 3D printing, through-hole soldering of electronic components on a board, as well as sealing-in threaded inserts. In the folder _Instructions_ you will find a detailed construction manual.
 
 ## Analogieexperiment zum BB84-Protokoll
-Das BB84-Protokoll ist ein Verfahren aus der Quantenkryptographie, bei dem Einzelphotonen in bestimmten Polarisationszuständen versendet und auf bestimmte Art und Weise gemessen werden, um gleichzeitig sichere Schlüssel zu generieren und zu senden. Genauere Informationen finden sich in der Handreichung im Ordner _Instructions_. 
-Für das Basisexperiment werden lediglich zwei Smartphones benötigt, für die Simulation eines Abhörversuchs werden drei Smartphones benötigt.   
+The BB84 protocol is a procedure used in quantum cryptography, in which single photons in specific polarisation states are sent and measured in a specific way in order to securely generate and transmit keys simultaneously. Further information can be found in the guide in the folder _Instructions_.
+The basic experiment requires just two smartphones, the simulation fo an eavesdropping attempt requires three smartphones.
