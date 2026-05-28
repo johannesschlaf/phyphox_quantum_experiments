@@ -1,0 +1,167 @@
+<phyphox xmlns="http://phyphox.org/xml" xmlns:editor="http://phyphox.org/editor/xml" version="1.19" editor:version="1.0" locale="en">
+    <title>Alice</title>
+    <category>BB84 Analogy</category>
+    <color>a0ee90</color>
+    <description>Generates random polarisation states. Version 4.1.</description>
+    <icon format="base64">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</icon>
+
+    <translations>
+	    <translation locale="de">
+            <title>Alice</title>
+            <category>BB84-Analogie</category>
+            <description>Generiert zufällige Polarisationszustände. Version 4.1.</description>
+            <string original="Generating polarisation states">Polarisationszustände generieren</string>
+            <string original="Generate new quantum state">Neuen Quantenzustand generieren</string>
+            <string original="Base:">Basis:</string>
+            <string original="Polarisation state:">Polarisation:</string>
+            <string original="Bit:">Bit:</string>
+            <string original="Counter:">Zähler:</string>
+	    </translation>
+    </translations>
+	
+    <data-containers>
+        <!--Random number generator-->
+        <container size="1" static="false">acc</container>
+        <container size="0" static="false">acc_array</container>
+        <container size="1" static="false" init="0.128">plant</container>
+        <container size="1" static="false" init="0">noise</container>
+        <container size="0" static="false">noise_array</container>
+        <container size="1" static="true" init="3.95">phi</container>
+        <!--Algorithm and Graphics-->
+        <container size="1" static="true" init="1000000">factor1</container>
+        <container size="0" static="false">number_array</container>
+        <container size="1" static="false">color</container>
+        <container size="1" static="false" init="0">val_button</container>
+        <container size="1" static="false" init="0">step_counter</container>
+        <container size="0" static="false" init="0">graphx</container>
+        <container size="0" static="false" init="0">graphy</container>
+        <container size="0" static="false">mapx</container>
+        <container size="0" static="false">mapy</container>
+        <container size="10" static="false">mapz</container>
+
+        <container size="0" static="false">dummy</container>
+    </data-containers>
+
+    <input>
+        <sensor average="false" type="accelerometer">
+            <output component="x">acc</output>
+        </sensor>
+    </input>
+
+    <output>
+    </output>
+
+    <analysis onUserInput="false">
+        <!--Generate noise-->
+        <formula formula="[1]*[2]*(1-[2])">
+            <input clear="false">phi</input>
+            <input clear="false">plant</input>
+            <output>plant</output>
+        </formula>
+        <formula formula="floor(10000*[1])%4">
+            <input clear="false">plant</input>
+            <output>noise</output>
+        </formula>
+
+        <!--Generate new data only when button is pressed-->
+        <if equal="true">
+            <input clear="false">val_button</input>
+            <input type="value">1</input>
+            <input clear="false" as="true">acc</input>
+            <input type="empty" as="false"/>
+            <output clear="false">acc_array</output>
+        </if>
+        <if equal="true">
+            <input clear="false">val_button</input>
+            <input type="value">1</input>
+            <input clear="true" as="true">noise</input>
+            <input type="empty" as="false"/>
+            <output clear="false">noise_array</output>
+        </if>
+        <append>
+            <input type="value">0</input>
+            <output clear="true">val_button</output>
+        </append>
+
+        <!--Generating random numbers and polarisation states-->
+        <formula formula="(floor(abs([1_])*[2]) + [3_])%4">
+            <input clear="false">acc_array</input>
+            <input clear="false">factor1</input>
+            <input clear="false">noise_array</input>
+            <output>number_array</output>
+        </formula>
+        <formula formula="[1_]/3">
+            <input clear="false">number_array</input>
+            <output>color</output>
+        </formula>
+
+        <!--Preparing data for ColorMap-->
+        <map>
+            <input as="mapWidth" type="value">3</input>
+            <input as="minX" type="value">-1</input>
+            <input as="maxX" type="value">1</input>
+            <input as="mapHeight" type="value">3</input>
+            <input as="minY" type="value">-1</input>
+            <input as="maxY" type="value">1</input>
+            <input as="x" clear="false">graphx</input>
+            <input as="y" clear="false">graphy</input>
+            <input as="z" clear="false">color</input>
+            <output as="x">mapx</output>
+            <output as="y">mapy</output>
+            <output as="z">dummy</output>
+        </map>
+        <const>
+            <input as="value" clear="false">color</input>
+            <input as="length" type="value">9</input>
+            <output>mapz</output>
+        </const>
+        <count>
+            <input clear="false">acc_array</input>
+            <output>step_counter</output>
+        </count>
+    </analysis>
+
+    <views>
+        <view label="Generating polarisation states">
+            <graph label="Quantum Interface"  showColorScale="false" mapColor1="ff0000" mapColor2="80ff00" mapColor3="00ffff" mapColor4="8000ff" munitX="" unitY="" minZ="0" maxZ="1" scaleMinZ="fixed" scaleMaxZ="fixed" aspectRatio="1" style="map" mapWidth="3" partialUpdate="true">
+                <input axis="x">mapx</input>
+                <input axis="y">mapy</input>
+                <input axis="z">mapz</input>
+            </graph>
+            <separator height="1"/>
+            <button label="Generate new quantum state">
+                <input type="value">1</input>
+                <output>val_button</output>
+            </button>
+            <separator height="1"/>
+            <value label="Base:" size="2" precision="0" scientific="false" unit="" factor="1" >
+                <input>number_array</input>
+                <map min="0" max="0">h/v</map>
+                <map min="1" max="1">+/-</map>
+                <map min="2" max="2">h/v</map>
+                <map min="3" max="3">+/-</map>
+            </value>
+            <separator height="1"/>
+            <value label="Polarisation state:" size="2" precision="0" scientific="false" unit="" factor="1" >
+                <input>number_array</input>
+                <map min="0" max="0">h</map>
+                <map min="1" max="1">-</map>
+                <map min="2" max="2">v</map>
+                <map min="3" max="3">+</map>
+            </value>
+            <separator height="1"/>
+            <value label="Bit:" size="2" precision="0" scientific="false" unit="" factor="1" >
+                <input>number_array</input>
+                <map min="0" max="1">0</map>
+                <map min="2" max="3">1</map>
+            </value>
+            <separator height="1"/>
+            <value label="Counter:" size="2" precision="0" scientific="false" unit="" factor="1" >
+                <input>step_counter</input>
+            </value>
+        </view>
+    </views>
+
+    <export>
+    </export>
+</phyphox>
