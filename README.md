@@ -1,3 +1,7 @@
+<picture>
+  <img alt="phyphox-Logo" src="phyphox_Logo.png">
+</picture>
+
 # Quantum experiments with phyphox
 Language: **English** | [Deutsch](./README.de.md)
 
