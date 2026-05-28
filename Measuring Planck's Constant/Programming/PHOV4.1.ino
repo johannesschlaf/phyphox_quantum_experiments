@@ -2,7 +2,7 @@
 #include <phyphoxBle.h>
 
 // Different for each box
-const char* ssid = "phyphox:h (V4.1) Kennung";
+const char* ssid = "phyphox:h (V4.1) ID/Kennung";
 
 // Functions (without write_File, append_File)
 void simon_says();
@@ -786,15 +786,15 @@ void setup() {
   while (!Serial) {delay(100);}
   
   // Enable Voltages
-  pinMode(pinOUT, OUTPUT); // DAC-Output
-  pinMode(pinPOT, INPUT); // Spannung am Poti einlesen
-  pinMode(pinRES, INPUT); // Spannung am Vorwiderstand einlesen
+  pinMode(pinOUT, OUTPUT); // DAC output
+  pinMode(pinPOT, INPUT); // Read voltage at potentiometer
+  pinMode(pinRES, INPUT); // Read voltage at serial resistor
 
 
-  // Set up Bluetooth connection
-  PhyphoxBLE::start(ssid, &PLA[0], sizeof(PLA)); // phyphox-Verbindung starten
-  //PhyphoxBLE::setMTU(185); // Byte-Max hochsetzen
-  PhyphoxBLE::configHandler=&simon_says; // phyphox-Input ermöglichen
+  // Set up bluetooth connection
+  PhyphoxBLE::start(ssid, &PLA[0], sizeof(PLA)); // Start phyphox connection
+  //PhyphoxBLE::setMTU(185); // Increase byte maximum
+  PhyphoxBLE::configHandler=&simon_says; // Enable phyphox input
 
   // Set default values
   bvoltagePOT = 4095;
