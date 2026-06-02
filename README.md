@@ -15,4 +15,4 @@ The BB84 protocol is a procedure used in quantum cryptography, in which single p
 The basic experiment requires just two smartphones, the simulation fo an eavesdropping attempt requires three smartphones.
 
 
-<img src="./BB84 Analogy/Instructions/typ-files/de/Abbildungen/BB84_Concept.png?raw=true" alt="BB84 Concept Diagram" width="100%">
+<img src="./BB84 Analogy/Instructions/typ-files/de/Abbildungen/BB84_Concept.png?raw=true" alt="BB84 Concept Diagram" width="50%">
