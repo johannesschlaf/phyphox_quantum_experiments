@@ -8,7 +8,7 @@ In this repository there are all the files needed for the ready-made phyphox-bas
 In this experiment, the threshold voltages of LEDs with different peak wavelengths $\lambda$ are measured. From these, the respective photon energy can be calculated and plotted over $\nu=\frac{c}{\lambda}$. Planck's constant equals the slope of the line of best fit through these data pairs.<br>
 This experiments needs a DIY setup that needs to be manufactured. Important manufacturing techniques include 3D printing, through-hole soldering of electronic components on a board, as well as sealing-in threaded inserts. In the folder _Instructions_ you will find a detailed construction manual.
 
-![Picture of the DIY setup](<Measuring Planck's Constant/Instructions/typ-files/de/Abbildungen/Aufbau.png?raw=true>)
+<img src="./Measuring Planck's Constant/Instructions/typ-files/de/Abbildungen/Aufbau.png?raw=true" alt="Picture of DIY setup" width="50%"> 
 
 ## BB84 analogy
 The BB84 protocol is a procedure used in quantum cryptography, in which single photons in specific polarisation states are sent and measured in a specific way in order to securely generate and transmit keys simultaneously. Further information can be found in the guide in the folder _Instructions_.<br>
