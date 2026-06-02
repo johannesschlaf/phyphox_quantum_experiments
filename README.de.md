@@ -8,6 +8,10 @@ In diesem Experiment werden die Schwellenspannungen von LEDs unterschiedlicher P
 Für dieses Experiment muss ein DIY-Aufbau gefertigt werden. Wesentliche Fertigungsschritte sind 3D-Druck von Bauteilen, Durchstecklöten elektronischer Komponenten auf einer Platine sowie das Einschmelzen von Gewindeeinsätzen. 
 Eine detaillierte Bauanleitung sowie eine Anleitung zur Durchführung finden sich im Ordner _Instructions_.
 
+<img src="./Measuring Planck's Constant/Instructions/typ-files/de/Abbildungen/Aufbau.png?raw=true" alt="Foto des DIY-Aufbaus" width="50%"> 
+
 ## Analogieexperiment zum BB84-Protokoll
 Das BB84-Protokoll ist ein Verfahren aus der Quantenkryptographie, bei dem Einzelphotonen in bestimmten Polarisationszuständen versendet und auf bestimmte Art und Weise gemessen werden, um digitale Schlüssel gleichzeitig zu generieren und sicher zu schicken. Genauere Informationen finden sich in der Handreichung im Ordner _Instructions_.<br>
 Für das Basisexperiment werden lediglich zwei Smartphones benötigt, für die Simulation eines Abhörversuchs werden drei Smartphones benötigt.   
+
+<img src="./BB84 Analogy/Instructions/typ-files/de/Abbildungen/BB84_Concept.png?raw=true" alt="BB84 Konzeptdiagramm" width="100%">
