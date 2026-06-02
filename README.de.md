@@ -14,4 +14,4 @@ Eine detaillierte Bauanleitung sowie eine Anleitung zur Durchführung finden sic
 Das BB84-Protokoll ist ein Verfahren aus der Quantenkryptographie, bei dem Einzelphotonen in bestimmten Polarisationszuständen versendet und auf bestimmte Art und Weise gemessen werden, um digitale Schlüssel gleichzeitig zu generieren und sicher zu schicken. Genauere Informationen finden sich in der Handreichung im Ordner _Instructions_.<br>
 Für das Basisexperiment werden lediglich zwei Smartphones benötigt, für die Simulation eines Abhörversuchs werden drei Smartphones benötigt.   
 
-<img src="./BB84 Analogy/Instructions/typ-files/de/Abbildungen/BB84_Concept.png?raw=true" alt="BB84 Konzeptdiagramm" width="100%">
+<img src="./BB84 Analogy/Instructions/typ-files/de/Abbildungen/BB84_Concept.png?raw=true" alt="BB84 Konzeptdiagramm" width="50%">
