@@ -1,5 +1,5 @@
 # Quantenphysik mit phyphox
-Sprache: [English](./README.md) | Deutsch
+Sprache: [English](./README.md) | **Deutsch**
 
 In diesem Repository finden sich alle benötigten Dateien für alle fertiggestellten phyphox-gestützten Experimente zur Quantenphysik.
 
