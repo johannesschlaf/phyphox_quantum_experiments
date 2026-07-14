@@ -15,3 +15,8 @@ Das BB84-Protokoll ist ein Verfahren aus der Quantenkryptographie, bei dem Einze
 Für das Basisexperiment werden lediglich zwei Smartphones benötigt, für die Simulation eines Abhörversuchs werden drei Smartphones benötigt.   
 
 <img src="./BB84 Analogy/Instructions/typ-files/de/Abbildungen/BB84_Concept_bg-white.png?raw=true" alt="BB84 Konzeptdiagramm" width="50%">
+
+## Quantisierte Leitfähigkeit
+...mehr Info in Kürze...
+
+<img src="./Quantized Conductance/Golddraht.jpg?raw=true" alt="BB84 Konzeptdiagramm" width="50%">
