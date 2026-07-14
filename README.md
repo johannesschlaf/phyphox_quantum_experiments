@@ -14,5 +14,9 @@ This experiments needs a DIY setup that needs to be manufactured. Important manu
 The BB84 protocol is a procedure used in quantum cryptography, in which single photons in specific polarisation states are sent and measured in a specific way in order to securely generate and transmit keys simultaneously. Further information can be found in the guide in the folder _Instructions_.<br>
 The basic experiment requires just two smartphones, the simulation fo an eavesdropping attempt requires three smartphones.
 
-
 <img src="./BB84 Analogy/Instructions/typ-files/de/Abbildungen/BB84_Concept_bg-white.png?raw=true" alt="BB84 Concept Diagram" width="50%">
+
+## Quantized conductance
+...coming soon...
+
+<img src="./Quantized Conductance/Golddraht.jpg?raw=true" alt="Picture of experimental setup" width="50%">
