@@ -147,7 +147,7 @@ Ein Beispiel findet sich in @BB84.
 #let fig_stack = [
     #stack(dir: ttb, spacing: 1em)[
         #show figure: set align(right)
-        #figure(image("Abbildungen/QR_QC_Bundle.png", width: 3cm), numbering: none)
+        #figure(image("Abbildungen/QR_QC-Bundle.png", width: 3cm), numbering: none)
         #show figure: set align(center)
         #figure(
             image("Abbildungen/Screenshot_Alice.jpg", width: 5cm),
