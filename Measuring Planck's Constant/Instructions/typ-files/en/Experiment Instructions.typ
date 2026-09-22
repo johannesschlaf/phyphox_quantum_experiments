@@ -105,7 +105,7 @@
     + Record an LED characteristic curve by _slowly_ reducing the voltage.
     + Pause the measurement.
     + Place the green regression line in the characteristic curve _by adjusting the minimum and maximum considered intensity_. The regression line should run through the approximately linear region of the characteristic curve. Any saturation curve should therefore _not_ be taken into account.
-    + Note down the threshold voltage $U_sans("threshold")$ calculated by the experiment in the table on page #ref(<tabelle>, supplement: [page]). Also note the corresponding uncertainty.
+    + Note down the threshold voltage $U_sans("threshold")$ calculated by the experiment in the table on page #ref(<table>, supplement: [page]). Also note the corresponding uncertainty.
     + Enter the wavelength of the LED in the experiment and save the _wavelength-threshold voltage_ pair in the experiment. The pair is now available in the "Measuring h" tab.
     + Do _not_ use the button with the trash can symbol during the procedure. This deletes _all_ data.\
      Now delete the measurement curve using the button provided specifically for this purpose.
@@ -124,7 +124,7 @@
     + Record an LED characteristic curve by varying the voltage.
     + Pause the measurement.
     + Place the green regression line in the characteristic curve _by adjusting the minimum and maximum considered current_. The regression line should run through the approximately linear region of the characteristic curve. Any saturation curve should therefore _not_ be taken into account.
-    + Note down the threshold voltage $U_sans("threshold")$ calculated by the experiment in the table on page #ref(<tabelle>, supplement: [page]). Also note the corresponding uncertainty.
+    + Note down the threshold voltage $U_sans("threshold")$ calculated by the experiment in the table on page #ref(<table>, supplement: [page]). Also note the corresponding uncertainty.
     + Enter the wavelength of the LED in the experiment and save the _wavelength-threshold voltage_ pair in the experiment. The pair is now available in the "Measuring h" tab.
     + Do _not_ use the button with the trash can symbol during the procedure. This deletes _all_ data.\
      Now delete the measurement curve using the button provided specifically for this purpose.
@@ -136,14 +136,14 @@
 #if not students [
     + Calculate the corresponding photon energies from the threshold voltages\
     _Reminder_: $e = 1.602 dot 10^(-19) "C"$
-    + Enter the obtained frequency-energy pairs into the diagram on page #ref(<diagramm>, supplement: [page]).
+    + Enter the obtained frequency-energy pairs into the diagram on page #ref(<diagram>, supplement: [page]).
     + Draw a regression line in the diagram and determine its gradient.
     + #underline[_If uncertainties were addressed_]:\
         - Draw the lines of minimum and maximum slope (within the scope of the uncertainties) in the diagram.
         - Calculate the uncertainty in the measured value for Planck's constant.
     + Compare the obtained value for Planck's constant with the value displayed in the app and discuss possible deviations.
 ] else [
-    + Calculate the corresponding light frequencies with corresponding uncertainty from the wavelengths entered in the table on page #ref(<tabelle>, supplement: [page]). The uncertainty is determined using Gaussian error propagation.
+    + Calculate the corresponding light frequencies with corresponding uncertainty from the wavelengths entered in the table on page #ref(<table>, supplement: [page]). The uncertainty is determined using Gaussian error propagation.
     + Calculate the corresponding photon energies with their respective uncertainties from the threshold voltages.
     + Plot the pairs using Python or Excel (including error bars) and create a regression line.
     + Draw the lines of minimum and maximum slope through the uncertainty regions.
@@ -191,7 +191,7 @@
                      [631], [8], [4.75], [0.07], [], [], [], [],
                      [655], [9], [4.58], [0.07], [], [], [], []
                 )
-            ) <tabelle>
+            ) <table>
         ]
     }
 ]
@@ -205,7 +205,7 @@
                     pad(x: -0.5cm, y: -3cm, image("Figures/Analysis_Graph.pdf", width: 100%))
                 )
             })
-        ]<diagramm>
+        ]<diagram>
     ]
     #page[
         #set align(center + horizon)

@@ -74,25 +74,25 @@ This experiment serves to address the quantization of the energy of electromagne
 = Physical Foundations
 == Light
 === Light as an electromagnetic wave
-In general, a wave is understood as a temporal change of a state that propagates through space, whereby no matter is transported but energy is. The state of an electromagnetic field is described by the electric field strength $arrow(E)$ and the magnetic induction $arrow(B)$. In an electromagnetic wave, $arrow(E)$ and $arrow(B)$ are oriented perpendicular to each other. The wave propagates in a direction that is perpendicular to the plane formed by $arrow(E)$ and $arrow(B)$. $arrow(E)$ and $arrow(B)$ change periodically (see @f.EM-Welle).\
+In general, a wave is understood as a temporal change of a state that propagates through space, whereby no matter is transported but energy is. The state of an electromagnetic field is described by the electric field strength $arrow(E)$ and the magnetic induction $arrow(B)$. In an electromagnetic wave, $arrow(E)$ and $arrow(B)$ are oriented perpendicular to each other. The wave propagates in a direction that is perpendicular to the plane formed by $arrow(E)$ and $arrow(B)$. $arrow(E)$ and $arrow(B)$ change periodically (see @f.EM_wave).\
 The distance over which $arrow(E)$ and $arrow(B)$ complete one period is called the wavelength $lambda$. It is related to the period $T$ and the oscillation frequency $f$ as follows:
 $
   f = 1/T = c/lambda
 $
 Here, $c$ corresponds to the speed of light in vacuum ($c approx$ 299,800,000 $"m"/"s"$).\
-The perceived color of light depends on its wavelength (see @f.Wellenlaenge).
+The perceived color of light depends on its wavelength (see @f.wavelength).
 
 
 #figure(placement: top,
     image("Figures/EM_wave.pdf", width: 50%),
     caption: [Light as an electromagnetic wave. The wavelength $lambda$ corresponds to the distance between two points of maximum electric field strength. Image source: Wikimedia Commons. By: And1mu. #v(1em)]
-)<f.EM-Welle>
+)<f.EM_wave>
 
 
 #figure(placement: bottom,
     image("Figures/Wavelength.png", width: 100%),
     caption: [Color spectrum of visible light as a function of wavelength. Image source: Schmidt, P. & Windhausen, S. (2024). _Lohmeyer Praktische Bauphysik_, p. 806. Springer Vieweg. ]
-)<f.Wellenlaenge>
+)<f.wavelength>
 
 
 === Light as particles
@@ -106,7 +106,7 @@ The proportionality constant $h$ is called _Planck's constant_. It is a fundamen
 The division of light energy into photons corresponds to the idea of very tiny light particles. It contradicts the idea of light as a continuous electromagnetic wave. Depending on the experiment, light behaves like a collection of light particles, like an electromagnetic wave, or like both simultaneously. This fact is referred to as _wave-particle duality_.
 
 == Diodes
-Diodes are electronic components that conduct current only in one direction. If they are connected the wrong way round (reverse direction), they block the circuit and can be damaged if the voltage is high enough. If they are connected in the forward direction, a certain voltage, the so-called _threshold voltage_, must be reached before current can flow. For conventional diodes, this voltage is typically around 0.7 $"V"$. A typical current-voltage characteristic can be found in @f.Kennlinie_reduziert.\
+Diodes are electronic components that conduct current only in one direction. If they are connected the wrong way round (reverse direction), they block the circuit and can be damaged if the voltage is high enough. If they are connected in the forward direction, a certain voltage, the so-called _threshold voltage_, must be reached before current can flow. For conventional diodes, this voltage is typically around 0.7 $"V"$. A typical current-voltage characteristic can be found in @f.cc_reduced.\
 The threshold voltage can be approximately determined by drawing a tangent to the characteristic curve. The threshold voltage corresponds approximately to the zero crossing of the tangent.\
 
 
@@ -120,14 +120,14 @@ Here, $e$ corresponds to the elementary charge ($e approx$ 1.602 $dot 10^(-19) "
 #figure(placement: bottom,
     image("Figures/LED_cc_reduced.pdf"),
     caption: [Typical current–voltage characteristic of a diode with a series resistor.]
-)<f.Kennlinie_reduziert>
+)<f.cc_reduced>
 
 pagebreak()
 = Experimental Setup and Procedure
 Data acquisition in this experiment is carried out with the smartphone app _phyphox_, developed at RWTH Aachen University. This app accesses the internal sensors of the smartphone and can thus read out measured quantities such as, for example, the instantaneous acceleration. In addition, external sensors can be integrated via Bluetooth. In phyphox, you choose what to measure by selecting one of the available experiments. New experiments can be added over Bluetooth from an external sensor device or through a QR code.\
 
 
-To determine the threshold voltage of an LED, a characteristic curve as in @f.Kennlinie_reduziert is required. The current through the LED is approximately proportional to its luminous intensity, so instead of measuring the current directly, you can measure the illuminance inside a blackout box. With the DIY setup provided for this experiment, both current measurement and measurement of the illuminance via the smartphone camera are possible.\
+To determine the threshold voltage of an LED, a characteristic curve as in @f.cc_reduced is required. The current through the LED is approximately proportional to its luminous intensity, so instead of measuring the current directly, you can measure the illuminance inside a blackout box. With the DIY setup provided for this experiment, both current measurement and measurement of the illuminance via the smartphone camera are possible.\
 
 
 Further information regarding setup, procedure, and evaluation can be found in the experiment instructions.
@@ -135,7 +135,7 @@ Further information regarding setup, procedure, and evaluation can be found in t
 = Background Information
 - In a simplified picture, a diode consists of an n-doped semiconductor (with free electrons in the crystal lattice) and a p-doped semiconductor (with electron deficiencies / free holes) joined together. At the contact point (the so-called pn junction), a charge zone without free charge carriers forms due to the diffusion of electrons (concentration equalization) from n to p; this is the so-called depletion region. If a diode is connected with the positive terminal to n and the negative terminal to p, electrons flow from n to the positive terminal and from the negative terminal to p, which enlarges the charge zone and thus the depletion region. In this direction, only a minimal current flow in the range of a few microamperes occurs (so-called reverse current). If the LED is connected the other way round, the depletion region becomes smaller until, above a certain voltage (threshold or turn-on voltage, about 0.7 $"V"$ for an ordinary diode, between 1.6 $"V"$ and 3.3 $"V"$ for LEDs with a visible emission spectrum), it disappears and current can flow. Photon generation occurs during the recombination of electrons (n) with holes (p), which are located at different energy levels.
 #pagebreak()
-- The simplified explanation above corresponds to the characteristic curve in @f.Kennlinie_Naeherung. In reality, an ideal diode actually follows the following characteristic (see @f.Kennlinie_komplett):
+- The simplified explanation above corresponds to the characteristic curve in @f.cc_approximation. In reality, an ideal diode actually follows the following characteristic (see @f.cc_complete):
 $
   I=I_(#text(font: "Calibri")[reverse]) dot exp((e dot U)/(n dot k dot T)-1)
 $
@@ -145,13 +145,13 @@ Here, $n$ is the so-called ideality factor or emission coefficient. For LEDs, it
 #figure(placement: top,
     image("Figures/LED_cc_approximation.pdf", width: 80%),
     caption: [Simplified characteristic curve of an LED. Current flows only after the threshold voltage is exceeded and then increases linearly with voltage.#v(1em)]
-)<f.Kennlinie_Naeherung>
+)<f.cc_approximation>
 
 
 #figure(placement: bottom,
     image("Figures/LED_cc_complete.pdf", width: 80%),
     caption: [Simplified characteristic curve of an LED. Current flows only after the threshold voltage is exceeded and then increases linearly with voltage.]
-)<f.Kennlinie_komplett>
+)<f.cc_complete>
 
 
 - The threshold voltage is usually defined as the voltage at which 10 % of the maximum permissible current flows through the diode.
