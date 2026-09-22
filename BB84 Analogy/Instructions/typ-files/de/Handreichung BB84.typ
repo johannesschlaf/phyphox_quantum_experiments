@@ -56,7 +56,7 @@
 ]
 
 = Hintergrund und Theorie
-Das BB84-Protokoll ist ein Verfahren aus der Quantenkryptographie. Es stellt eine Möglichkeit dar, digitale Schlüssel durch die Nutzung von Quanteneffekten zu generieren und zugleich abhörsicher auszutauschen. Es wurde 1984 von Charles H. Bennet und Gilles Brassard
+Das BB84-Protokoll ist ein Verfahren aus der Quantenkryptographie. Es stellt eine Möglichkeit dar, digitale Schlüssel durch die Nutzung von Quanteneffekten zu generieren und zugleich abhörsicher auszutauschen. Es wurde 1984 von Charles H. Bennet und Gilles Brassard vorgeschlagen.
 == Motivation
 Viele gängige Verschlüsselungsalgorithmen können durch hinreichend leistungsfähige Quantencomputer essentiell schneller als durch klassische Computer geknackt werden. Ein Beispiel hierfür ist das Verfahren RSA, dessen Sicherheit auf der Unlösbarkeit einer Primfaktorzerlegung hinreichend großer Zahlen (Primfaktoren mit über 100 Stellen) in angemessener Zeit basiert (aktuell werden mindestens mehrere Wochen benötigt). Der für hinreichend große und fehlerarme Quantencomputer konzipierte und bereits 1994 veröffentlichte sogenannte _Shor-Algorithmus_ könnte eine solche Primfaktorzerlegung in angemessener Zeit schaffen (vermutlich wenige Sekunden).
 Aus diesem Grund ist es sinnvoll, sich mit quantekryptographischen Verfahren auseinanderzusetzen, bei denen die Sicherheit aus der Ausnutzung bestimmter Quanteneffekte stammt, welche nicht durch eine größere Rechenleistung und/oder Quantencomputing ausgehebelt werden können.
@@ -163,7 +163,7 @@ Ein Beispiel findet sich in @BB84.
 
     Es existieren insgesamt sieben _phyphox_-Experimente zum BB84-Protokoll. Hiervon sind drei für die Einstiegsversuche gedacht und vier für die Versuche für Fortgeschrittene. Die Experimente lassen sich als Bundle über den QR-Code oben rechts in der _phyphox_-App laden. Hierzu in _phyphox_ auf das Plus-Symbol klicken und "Neues Experiment von einem QR-Code" auswählen. #v(1em)
 
-    Für jeden der Versuche gibt es eine Tabelle auf dem Auswertungsbogen
+    Für jeden der Versuche gibt es eine Tabelle auf dem Auswertungsbogen.
 ]
 
 == Einstiegsversuche
