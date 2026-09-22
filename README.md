@@ -1,11 +1,9 @@
 # Quantum experiments with phyphox
 Language: **English** | [Deutsch](./README.de.md)
 
-In this repository there are all the files needed for the ready-made phyphox-based quantum experiments.<br>
-```diff
- - English instructions regarding the conduction of the experiments are now ready and available. <br>
- - English instructions regarding the manufacturing of the DIY setup for measuring Planck's constant are currently in the works. They will be available in the future.
-```
+In this repository there are all the files needed for the ready-made phyphox-based quantum experiments.
+ - **English instructions regarding the conduction of the experiments are now ready and available.**
+ - **English instructions regarding the manufacturing of the DIY setup for measuring Planck's constant are currently in the works. They will be available in the future.**
 
 ## Measuring Planck's constant
 In this experiment, the threshold voltages of LEDs with different peak wavelengths $\lambda$ are measured. From these, the respective photon energy can be calculated and plotted over $\nu=\frac{c}{\lambda}$. Planck's constant equals the slope of the line of best fit through these data pairs.<br>
