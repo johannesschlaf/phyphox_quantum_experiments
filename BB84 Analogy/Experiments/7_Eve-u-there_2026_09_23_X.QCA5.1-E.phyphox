@@ -387,6 +387,7 @@
             <separator height="1"/>
             <value label="Counter:" size="2" precision="0" scientific="false" unit="" factor="1" >
                 <input>step_counter</input>
+                <map min="20">20 (max)</map>
             </value>
         </view>
         <view label="Sent polarisation states">
