@@ -157,8 +157,22 @@
             <output>next_color_plant</output>
         </formula>
 
+        <!--Generate random numbers for base and decision-->
+        <formula formula="(floor(abs([1])*[2]) + [3])%2">
+            <input clear="false">acc</input>
+            <input clear="false">base_factor</input>
+            <input clear="false">base_noise</input>
+            <output>base</output>
+        </formula>
+        <formula formula="(floor(abs([1])*[2]) + [3])%2">
+            <input clear="false">acc</input>
+            <input clear="false">decision_factor</input>
+            <input clear="false">decision_noise</input>
+            <output>decision</output>
+        </formula>
+
         <!--Generate random number as polarisation state candidate-->
-        <formula formula="(floor(abs([1])*[2]) + [3])%4 + 1">
+        <formula formula="(floor(abs([1])*[2]) + [3])%4">
             <input clear="false">acc</input>
             <input clear="false">polstate_factor</input>
             <input clear="false">polstate_noise</input>
@@ -166,7 +180,7 @@
         </formula>
 
         <!--Calculate measurement candidate-->
-        <formula formula="([1]-1)*abs((([1]-1)%2) - [2]) + (((([1]-1)%2)+[2]+1)%2)*((([2]+1)%2) + 2*[3]) + 1">
+        <formula formula="[1]*abs(([1]%2) - [2]) + ((([1]%2)+[2]+1) %2)*((([2]+1)%2) + 2*[3])">
             <input clear="false">polstate</input>
             <input clear="false">base</input>
             <input clear="false">decision</input>
@@ -182,6 +196,12 @@
             <output>output_candidate</output>
         </if>
 
+        <add>
+            <input>output_candidate</input>
+            <input type="value">1</input>
+            <output>output_candidate</output>
+        </add>
+
         <!--Append to array of output polarisation states only when button is pressed + button reset-->
         <if equal="true">
             <input clear="false">button_value</input>
@@ -196,7 +216,7 @@
         </append>
 
         <!--Calculate current color-->
-        <formula formula="(([1_]+[2])%4)/3 - 1">
+        <formula formula="((([1_]-1)+[2])%4)/3">
             <input clear="false">output_array</input>
             <input clear="false">color_psr-number</input>
             <output>color</output>
@@ -360,7 +380,7 @@
                 <input axis="z">mapz</input>
             </graph>
             <separator height="1"/>
-            <button label="Generate new quantum state">
+            <button label="Generate new quantum state" visibility="dau">
                 <input type="value">1</input>
                 <output>button_value</output>
             </button>
@@ -370,105 +390,105 @@
             </value>
         </view>
         <view label="Sent polarisation states">
-            <info label="1" bold="true" size="1.2" color="yellow" visbility="n00"/>
-            <value label="Base:" size="2" precision="0" scientific="false" unit="" factor="1" visbility="n00">
+            <info label="1" bold="true" size="1.2" color="yellow" visibility="n00"/>
+            <value label="Base:" size="2" precision="0" scientific="false" unit="" factor="1" visibility="n00">
                     <input>n00</input>
-                    <map min="0" max="0">h/v</map>
-                    <map min="1" max="1">+/-</map>
-                    <map min="2" max="2">h/v</map>
-                    <map min="3" max="3">+/-</map>
-                    <map min="99" max="99">?</map>
+                    <map min="1" max="1">h/v</map>
+                    <map min="2" max="2">+/-</map>
+                    <map min="3" max="3">h/v</map>
+                    <map min="4" max="4">+/-</map>
+                    <map min="-99" max="-99">?</map>
             </value>
-            <value label="Polarisation state:" size="2" precision="0" scientific="false" unit="" factor="1" visbility="n00">
+            <value label="Polarisation state:" size="2" precision="0" scientific="false" unit="" factor="1" visibility="n00">
                     <input>n00</input>
-                    <map min="0" max="0">h</map>
-                    <map min="1" max="1">-</map>
-                    <map min="2" max="2">v</map>
-                    <map min="3" max="3">+</map>
-                    <map min="99" max="99">?</map>
+                    <map min="1" max="1">h</map>
+                    <map min="2" max="2">-</map>
+                    <map min="3" max="3">v</map>
+                    <map min="4" max="4">+</map>
+                    <map min="-99" max="-99">?</map>
             </value>
-            <value label="Bit:" size="2" precision="0" scientific="false" unit="" factor="1" visbility="n00">
+            <value label="Bit:" size="2" precision="0" scientific="false" unit="" factor="1" visibility="n00">
                     <input>n00</input>
-                    <map min="0" max="1">0</map>
-                    <map min="2" max="3">1</map>
-                    <map min="99" max="99">?</map>
+                    <map min="1" max="2">0</map>
+                    <map min="3" max="4">1</map>
+                    <map min="-99" max="-99">?</map>
             </value>
-            <separator color="white" visbility="n00"/>
+            <separator color="white" visibility="n00"/>
 
-            <info label="2" bold="true" size="1.2" color="yellow" visbility="n01"/>
-            <value label="Base:" size="2" precision="0" scientific="false" unit="" factor="1" visbility="n01">
+            <info label="2" bold="true" size="1.2" color="yellow" visibility="n01"/>
+            <value label="Base:" size="2" precision="0" scientific="false" unit="" factor="1" visibility="n01">
                     <input>n01</input>
-                    <map min="0" max="0">h/v</map>
-                    <map min="1" max="1">+/-</map>
-                    <map min="2" max="2">h/v</map>
-                    <map min="3" max="3">+/-</map>
-                    <map min="99" max="99">?</map>
+                    <map min="1" max="1">h/v</map>
+                    <map min="2" max="2">+/-</map>
+                    <map min="3" max="3">h/v</map>
+                    <map min="4" max="4">+/-</map>
+                    <map min="-99" max="-99">?</map>
             </value>
-            <value label="Polarisation state:" size="2" precision="0" scientific="false" unit="" factor="1" visbility="n01">
+            <value label="Polarisation state:" size="2" precision="0" scientific="false" unit="" factor="1" visibility="n01">
                     <input>n01</input>
-                    <map min="0" max="0">h</map>
-                    <map min="1" max="1">-</map>
-                    <map min="2" max="2">v</map>
-                    <map min="3" max="3">+</map>
-                    <map min="99" max="99">?</map>
+                    <map min="1" max="1">h</map>
+                    <map min="2" max="2">-</map>
+                    <map min="3" max="3">v</map>
+                    <map min="4" max="4">+</map>
+                    <map min="-99" max="-99">?</map>
             </value>
-            <value label="Bit:" size="2" precision="0" scientific="false" unit="" factor="1" visbility="n01">
+            <value label="Bit:" size="2" precision="0" scientific="false" unit="" factor="1" visibility="n01">
                     <input>n01</input>
-                    <map min="0" max="1">0</map>
-                    <map min="2" max="3">1</map>
-                    <map min="99" max="99">?</map>
+                    <map min="1" max="2">0</map>
+                    <map min="3" max="4">1</map>
+                    <map min="-99" max="-99">?</map>
             </value>
-            <separator color="white" visbility="n01"/>
+            <separator color="white" visibility="n01"/>
 
-            <info label="3" bold="true" size="1.2" color="yellow" visbility="n02"/>
-            <value label="Base:" size="2" precision="0" scientific="false" unit="" factor="1" visbility="n02">
+            <info label="3" bold="true" size="1.2" color="yellow" visibility="n02"/>
+            <value label="Base:" size="2" precision="0" scientific="false" unit="" factor="1" visibility="n02">
                     <input>n02</input>
-                    <map min="0" max="0">h/v</map>
-                    <map min="1" max="1">+/-</map>
-                    <map min="2" max="2">h/v</map>
-                    <map min="3" max="3">+/-</map>
-                    <map min="99" max="99">?</map>
+                    <map min="1" max="1">h/v</map>
+                    <map min="2" max="2">+/-</map>
+                    <map min="3" max="3">h/v</map>
+                    <map min="4" max="4">+/-</map>
+                    <map min="-99" max="-99">?</map>
             </value>
-            <value label="Polarisation state:" size="2" precision="0" scientific="false" unit="" factor="1" visbility="n02">
+            <value label="Polarisation state:" size="2" precision="0" scientific="false" unit="" factor="1" visibility="n02">
                     <input>n02</input>
-                    <map min="0" max="0">h</map>
-                    <map min="1" max="1">-</map>
-                    <map min="2" max="2">v</map>
-                    <map min="3" max="3">+</map>
-                    <map min="99" max="99">?</map>
+                    <map min="1" max="0">h</map>
+                    <map min="2" max="1">-</map>
+                    <map min="3" max="2">v</map>
+                    <map min="4" max="3">+</map>
+                    <map min="-99" max="-99">?</map>
             </value>
-            <value label="Bit:" size="2" precision="0" scientific="false" unit="" factor="1" visbility="n02">
+            <value label="Bit:" size="2" precision="0" scientific="false" unit="" factor="1" visibility="n02">
                     <input>n02</input>
-                    <map min="0" max="1">0</map>
-                    <map min="2" max="3">1</map>
-                    <map min="99" max="99">?</map>
+                    <map min="1" max="2">0</map>
+                    <map min="3" max="4">1</map>
+                    <map min="-99" max="-99">?</map>
             </value>
-            <separator color="white" visbility="n02"/>
+            <separator color="white" visibility="n02"/>
 
-            <info label="4" bold="true" size="1.2" color="yellow" visbility="n03"/>
-            <value label="Base:" size="2" precision="0" scientific="false" unit="" factor="1" visbility="n03">
+            <info label="4" bold="true" size="1.2" color="yellow" visibility="n03"/>
+            <value label="Base:" size="2" precision="0" scientific="false" unit="" factor="1" visibility="n03">
                     <input>n03</input>
-                    <map min="0" max="0">h/v</map>
-                    <map min="1" max="1">+/-</map>
-                    <map min="2" max="2">h/v</map>
-                    <map min="3" max="3">+/-</map>
-                    <map min="99" max="99">?</map>
+                    <map min="1" max="1">h/v</map>
+                    <map min="2" max="2">+/-</map>
+                    <map min="3" max="3">h/v</map>
+                    <map min="4" max="4">+/-</map>
+                    <map min="-99" max="-99">?</map>
             </value>
-            <value label="Polarisation state:" size="2" precision="0" scientific="false" unit="" factor="1" visbility="n03">
+            <value label="Polarisation state:" size="2" precision="0" scientific="false" unit="" factor="1" visibility="n03">
                     <input>n03</input>
-                    <map min="0" max="0">h</map>
-                    <map min="1" max="1">-</map>
-                    <map min="2" max="2">v</map>
-                    <map min="3" max="3">+</map>
-                    <map min="99" max="99">?</map>
+                    <map min="1" max="1">h</map>
+                    <map min="2" max="2">-</map>
+                    <map min="3" max="3">v</map>
+                    <map min="4" max="4">+</map>
+                    <map min="-99" max="-99">?</map>
             </value>
-            <value label="Bit:" size="2" precision="0" scientific="false" unit="" factor="1" visbility="n03">
+            <value label="Bit:" size="2" precision="0" scientific="false" unit="" factor="1" visibility="n03">
                     <input>n03</input>
-                    <map min="0" max="1">0</map>
-                    <map min="2" max="3">1</map>
-                    <map min="99" max="99">?</map>
+                    <map min="1" max="2">0</map>
+                    <map min="3" max="4">1</map>
+                    <map min="-99" max="-99">?</map>
             </value>
-            <separator color="white" visbility="n03"/>
+            <separator color="white" visibility="n03"/>
 
             <info label="5" bold="true" size="1.2" color="yellow"  visibility="n04"/>
             <value label="Base:" size="2" precision="0" scientific="false" unit="" factor="1"  visibility="n04">
